@@ -1,0 +1,12 @@
+
+#ifdef VENDOR_EDIT
+#Added by Cong.Dai@Bsp.group.Tp for Samsung s6sy791 ic driver
+
+config TOUCHPANEL_SAMSUNG_S6SY792
+#   default y
+    tristate "TP Samsung s6sy792 IC enable or not for OPLUS"
+    ---help---
+    say Y to enable driver for Touchpanel using Samsung s6sy792
+
+#endif
+

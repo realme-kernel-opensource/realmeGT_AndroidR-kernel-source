@@ -1,0 +1,4 @@
+config DRM_OPLUS
+	tristate "OPPO kernel LCD"
+	help
+	  Say Y here to enable OPPO LCD kernel support

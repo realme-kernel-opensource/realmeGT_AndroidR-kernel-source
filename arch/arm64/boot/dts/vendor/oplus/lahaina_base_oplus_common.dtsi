@@ -1,0 +1,17 @@
+
+/ {
+	oppo,dtsi_no = <19825 19815>;
+	aliases {
+		/* #ifdef OPLUS_ARCH_EXTENDS */
+		/* Rainz.zhang@MULTIMEDIA.AUDIODRIVER.SMARTPA, 2020/11/09, fixed smart pa i2c index to avoid dai_link mismatch */
+		i2c4 = &qupv3_se19_i2c;
+		/* #endif OPLUS_ARCH_EXTENDS  */
+	};
+    chosen {
+        //#ifdef OPLUS_BSP_BOOTFLOW
+        //#yanghao@BSP.BOOTLOADER.BOOTFLOW 2020/09/14 modify for kernel log buffer too small issue 
+        bootargs = "log_buf_len=1M earlycon=msm_geni_serial,0x98c000 rcupdate.rcu_expedited=1 rcu_nocbs=0-7 kpti=off";
+        //#endif
+        //bootargs = "log_buf_len=256K earlycon=msm_geni_serial,0x98c000 rcupdate.rcu_expedited=1 rcu_nocbs=0-7";
+    };
+};

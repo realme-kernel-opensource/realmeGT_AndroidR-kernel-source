@@ -1,0 +1,17 @@
+# SPDX-License-Identifier: GPL-2.0-only
+# Copyright (C) 2018-2020 Oplus. All rights reserved.
+
+config OPLUS_FEATURE_MIDAS
+bool "config oplus midas feature"
+help
+	This selects midas driver
+
+config OPLUS_FEATURE_MIDAS_DEVICE
+bool "config oplus midas device feature"
+help
+	This selects midas device driver
+
+config OPLUS_FEATURE_BINDER_STATS_ENABLE
+bool "config oplus midas binder stats feature"
+help
+	This selects midas binder stats device driver
